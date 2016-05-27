@@ -10,8 +10,6 @@ scripts contained:
     stores it in a file called unicode.marshal
 
 
- - 
-
 
 
 
@@ -19,8 +17,8 @@ scripts contained:
   Unicode::CodePointTable.load_state
   This will load the marshaled data into the codetable. Since the class
   is a singleton class, you only need to do it once and you dont need
-  to save the state yourself. However you need to do it if you want to
-  have a usable Codepoint Table.
+  to save the state yourself. However you need to do call #load_state once
+  if you want to have a usable Codepoint Table.
 
 - add codepoints to the table
   Unicode::CodePointTable.add(unicode_codepoint)
